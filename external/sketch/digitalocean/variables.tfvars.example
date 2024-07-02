@@ -8,7 +8,7 @@ edge_regions   = [""]
 # Host image you would like to use
 docean_image = ""
 
-# Shortname for the engagement, will be used to identify resources in Linode and hostnames
+# Shortname for the engagement, will be used to identify resources in Digital Ocean and hostnames
 engagement_name = ""
 
 # Path to place your ssh configuration for this infrastructure
