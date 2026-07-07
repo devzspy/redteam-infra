@@ -1,2 +1,6 @@
 ---
 # defaults file for openresty-v2
+
+# Port used by ingress-restriction role to restrict access.
+# Override this variable when using the ingress-restriction role.
+openresty_v2_ingress_port: 2222

@@ -145,13 +145,13 @@
   args:
     chdir: /opt/web
 
-- name: Allow 2222
+- name: Allow ingress port
   iptables:
     action: insert
     chain: "INPUT"
     jump: ACCEPT
     protocol: tcp
-    destination_port: 2222
+    destination_port: "{{ openresty_v2_ingress_port }}"
 
 - name: Save iptables
   command: iptables-save -f /etc/iptables/rules.v4
